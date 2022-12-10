@@ -26,11 +26,11 @@ public class Example01 {
 //        System.out.println("Is the value 'World' present? " +
 //                hash_map.containsValue("World"));
 
-        for (Integer i : hash_map.keySet()) {
+        for (Integer i : hash_map.keySet()) { // получим весь набор ключей
             System.out.println(i);
         }
 
-        for (String i : hash_map.values()) {
+        for (String i : hash_map.values()) {  // получить набор всех значений
             System.out.println(i);
         }
     }

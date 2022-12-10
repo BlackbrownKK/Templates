@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         try {
-            FileReader fileReader = new FileReader("src/Stream/BufferReader/Test.txt");
+            FileReader fileReader = new FileReader("src/main/java/Stream/BufferReader/Test.txt");
             BufferedReader bufferedReader = new BufferedReader(fileReader);
             bufferedReader.lines().forEach(System.out::println);
 fileReader.close();
