@@ -1,10 +1,6 @@
 package Collection.HashMap;
 
-import MultiServer.HW17.Client;
-
-import java.io.PrintWriter;
 import java.util.HashMap;
-import java.util.Map;
 
 public class Main2 {
 
