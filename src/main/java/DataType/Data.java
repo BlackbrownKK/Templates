@@ -21,6 +21,9 @@ public class Data {
         boolean myBool = true;
         String myText = "Hello";
 
+        System.out.println(myText);
+        System.out.println(myText.charAt(3));
+
     }
 }
 //byte	1 byte	Stores whole numbers from -128 to 127
