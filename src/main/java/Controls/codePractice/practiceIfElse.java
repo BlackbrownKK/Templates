@@ -31,7 +31,21 @@ notString("not bad") → "not bad"
         return "not " + str;
     }
 
+
+    public static String front3(String str) {
+/*front3("Java") → "JavJavJav"
+front3("Chocolate") → "ChoChoCho"
+front3("abc") → "abcabcabc"
+
+ */
+        String result = "";
+        if (str.length() >= 3) result = str.substring(0, 3);
+        else result =  str;
+        return result+result+result;
+
+    }
+
     public static void main(String[] args) {
-        System.out.println(notString ("fuck"));
+        System.out.println(front3 ("f"));
     }
 }

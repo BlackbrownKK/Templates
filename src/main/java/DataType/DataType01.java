@@ -14,6 +14,10 @@ public class DataType01 {
         о.b *= 2;
     }
 
+    static Integer iOb = 100; // автоупаковка значения типа int
+    static int i = iOb; // автораспаковка значения типа int
+
+
     public static void main(String[] args) {
 
         int valueA = 128;
@@ -27,7 +31,8 @@ public class DataType01 {
         System.out.println("Int value " + valueA);
         System.out.println("Long value " + valueB);
         System.out.println("Float value " + valueC);
-
+        System.out.println(i + " " + iOb);
+// выводит значения 100 и 100
 
     }
 

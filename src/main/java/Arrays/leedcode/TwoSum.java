@@ -65,4 +65,24 @@ Output: [1,2]
             Arrays.stream(twoSumV2(nums, 5)).forEach(System.out::println);
             Arrays.stream(twoSumV3(nums, 5)).forEach(System.out::println);
         }
+
+    public String front22(String str) {
+        // First figure the number of chars to take
+//        front22("kitten") → "kikittenki"
+//        front22("Ha") → "HaHaHa"
+//        front22("abc") → "ababcab"
+        int take = 2;
+        if (take > str.length()) {
+            take = str.length();
+        }
+
+        String front = str.substring(0, take);
+        return front + str + front;
     }
+
+    public boolean in1020(int a, int b) {
+        return (a >= 10 && a <= 20) || (b >= 10 && b <= 20);
+    }
+
+
+}

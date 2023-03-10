@@ -17,12 +17,36 @@ public class Data {
 
         int myNum2 = 5;
         float myFloatNum = 5.99f;
-        char myLetter = 'D';
+        char myLetter = 'D'; // Character
         boolean myBool = true;
+        /*
+ static Boolean valueOf(boolean логическое_значение) логическое_значение должно быть равно true или false.
+
+static Boolean valueOf(String логическая_строка)  будет содержать логическое значение true, если логическая_строка содержит символьную
+строку" true" (в верхнем или нижнем регистре). В противном случае этот объект
+будет содержать логическое значение false.
+         */
         String myText = "Hello";
 
         System.out.println(myText);
         System.out.println(myText.charAt(3));
+
+
+        char chars[] = {'а', 'Ь', 'с'}; // конструктор: String(char chars[]) -> " аЬс ".
+        String s = new String(chars);
+
+
+        char chars1[] = {'а', 'Ь', 'с', 'd', 'е', 'f'}; // -> "cde"
+        String s1 = new String(chars, 2, 3);
+
+        // Сцепление строк "Ему 9 лет".
+        String age = "9";
+        String s2 = "He " + age + " 9.";
+        System.out.println(s2); // В данном примере переменная age относится к типу int, а не String
+// значение типа int автоматически преобразуется в свое строковое представление в объекте типа String
+
+        String s3 = "четыре: " + 2 + 2; //  четыре: 22
+        String s4 = " четыре: " + (2 + 2); //  четыре: 4
 
     }
 }

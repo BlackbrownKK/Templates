@@ -3,13 +3,23 @@ package Controls;
 public class IfElse09 {
 
     public static void main(String[] args) {
-        System.out.println("parrotTrouble " + parrotTrouble(true, 21));
-        System.out.println("posNeg " + posNeg(-1, 1, true));
-        System.out.println("icyHot " + icyHot(120, -1));
-        System.out.println("loneTeen " + loneTeen(13, 13));
-        System.out.println("startOz " + startOz("olkgfggds"));
-
+//        System.out.println("parrotTrouble " + parrotTrouble(true, 21));
+//        System.out.println("posNeg " + posNeg(-1, 1, true));
+//        System.out.println("icyHot " + icyHot(120, -1));
+//        System.out.println("loneTeen " + loneTeen(13, 13));
+//        System.out.println("startOz " + startOz("olkgfggds"));
+        System.out.println(max1020(23, 10));
     }
+
+    public static int max1020(int a, int b) {
+        if ((a < 10 && a > 20) && (b < 10 && b > 20)) {
+            return 0;
+        } else if (a > b && a >=10 && a<=20) {
+                return a;
+            } else {
+                return b;
+            }
+        }
 
     public static boolean parrotTrouble(boolean talking, int hour) {
         return (talking && (hour < 7 || hour > 20));
@@ -43,6 +53,19 @@ public class IfElse09 {
         }
 
     }
+    static int resolve(int first, int second, int third) {
+        int result = 0;
+        if (first == second && second != third) {
+            result = third;
+        } else if (second == third && second != first) {
+            result = first;
+        } else if (first == third && second != first) {
+            result = second;
+        } else if (first == second && first == third) {
+            result = -1;
+        }
+        return result;
+    }
 
     public static boolean loneTeen(int a, int b) {
 /*
@@ -67,16 +90,18 @@ startOz("oxx") → "o"
  */
         String result = "";
 
-        if (str.length() >= 1 && str.charAt(0)=='o') {
+        if (str.length() >= 1 && str.charAt(0) == 'o') {
             result = result + str.charAt(0);
         }
 
-        if (str.length() >= 2 && str.charAt(1)=='z') {
+        if (str.length() >= 2 && str.charAt(1) == 'z') {
             result = result + str.charAt(1);
         }
 
         return result;
-        }
     }
+
+
+}
 
 

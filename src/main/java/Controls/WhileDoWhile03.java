@@ -14,4 +14,18 @@ public class WhileDoWhile03 {
         }
         while (c > 0);
     }
+
+
+    static int resolve1(int first, int second, int third) {
+
+        int result = first - second;
+
+        while (result > third) {
+            result = result - second;
+
+        }
+        return result;
+    }
+
+
 }
