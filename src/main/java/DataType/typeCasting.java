@@ -11,6 +11,8 @@ public class typeCasting {
 
     public static void main(String[] args) {
         int myInt = 9;
+        int myInt2 = 8;
+
         double myDouble = myInt; // Automatic casting: int to double
 
         System.out.println(myInt);      // Outputs 9

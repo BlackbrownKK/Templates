@@ -5,11 +5,13 @@ package DataType;
 public class DataType01 {
 
     int a, b;
-    DataType01 (int i, int j){
+
+    DataType01(int i, int j) {
         a = 1;
         b = 2;
     }
-    void meth(DataType01 о){
+
+    void meth(DataType01 о) {
         о.a /= 2;
         о.b *= 2;
     }
@@ -33,9 +35,8 @@ public class DataType01 {
         System.out.println("Float value " + valueC);
         System.out.println(i + " " + iOb);
 // выводит значения 100 и 100
-
+        var s = valueB;   // автоматическое подбор типов
     }
-
 
 
 }

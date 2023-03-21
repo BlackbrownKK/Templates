@@ -13,5 +13,13 @@ public class IndexOf {
         System.out.println("lastindexOf (t, 60) = " + s.lastIndexOf('t', 60));
         System.out.println("indexOf(the, 10) = " + s.indexOf("the", 10));
         System.out.println("lastindexOf(the, 60) = " + s.lastIndexOf("the", 60));
+
+        StringBuffer sb = new StringBuffer("one two one");
+        int i;
+        i = sb.indexOf("one");
+        System.out.println("Индeкc первого вхождения: " + i);
+        i = sb.lastIndexOf("one");
+        System.out.println("Индeкc последнего вхождения: "
+                + i);
     }
 }

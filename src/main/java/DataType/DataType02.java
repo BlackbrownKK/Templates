@@ -8,6 +8,7 @@ public class DataType02 {
 
         double valueA = 129.57;
 
+
         // явное преобразование типов
         long valueB = (long) valueA;
 
