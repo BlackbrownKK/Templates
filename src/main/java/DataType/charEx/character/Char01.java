@@ -16,7 +16,4 @@ public class Char01 {
         System.out.println(codePointAt("myChar", 2));   // Возвращает кодовую точку, находящуюся на заданной поэ.яц.я.я
 
     }
-    /*
-
-     */
 }

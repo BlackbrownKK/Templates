@@ -7,6 +7,12 @@ import java.io.InputStreamReader;
 public class Trim {
     //Использовать метод trim() для обработки команд, вводимых пользователем
     public static void main(String[] args) {
+
+        String str1 = "     the quick brown fox     ";
+        System.out.println("String with whitespaces: " + str1);
+        String trimmedStr = str1.trim();
+        System.out.println("Trimmed string: " + trimmedStr);
+
         // создать буферизованный поток чтения данных типа BufferedReader, используя стандатный поток ввода System.in
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String str;

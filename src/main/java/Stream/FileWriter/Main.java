@@ -5,7 +5,7 @@ import java.io.*;
 public class Main {
 
     public static void main(String[] args) {
-        File file = new File("src/Stream/FileWriter/Test.txt");
+        File file = new File("src/main/java/Stream/FileWriter/Test.txt");
         PrintWriter printWriter = null;
         try {
             printWriter = new PrintWriter(file);

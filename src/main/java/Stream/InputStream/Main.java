@@ -9,7 +9,7 @@ public class Main {
         FileInputStream fileInputStream;
 
         try {
-            fileInputStream = new FileInputStream("src\\Stream\\Exanple01\\test");
+            fileInputStream = new FileInputStream("src/main/java/Stream/InputStream/test");
             int a;
             while ( (a = fileInputStream.read()) !=-1) {
                 System.out.print(a);

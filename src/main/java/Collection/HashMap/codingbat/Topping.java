@@ -30,16 +30,15 @@ topping1({"pancake": "syrup"}) → {"bread": "butter", "pancake": "syrup"}
     }
 
     public static Map<String, String> topping1(Map<String, String> map) {
-        map.put("bread", "butter");
 
         if (map.containsKey("ice cream")) {
-            map.put("ice cream", "cherry");
+            map.put("yogurt", "cherry");
+        } else if (map.containsKey("spinach")) {
+            map.put("spinach", "nuts");
+        } else {
+            return map;
         }
-        for (String i : map.keySet()) {
-            System.out.println("key: " + i + " value: " + map.get(i));
 
-        }
         return map;
     }
 }
-

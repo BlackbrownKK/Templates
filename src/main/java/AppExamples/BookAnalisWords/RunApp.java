@@ -1,8 +1,16 @@
 package AppExamples.BookAnalisWords;
 
 
+import Stream.StreamAPI.Lession18.Pair;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.PriorityQueue;
+import java.util.Scanner;
 
 public class RunApp {
 
@@ -20,6 +28,7 @@ public class RunApp {
 
     }
 }
+//
 //
 //    public static String openBook() {
 //        Scanner scanner = new Scanner(System.in);
@@ -45,10 +54,9 @@ public class RunApp {
 //        } catch (IOException e) {
 //            System.out.println("111");
 //        }
-//        return map;
 //    }
-
-
+//
+//
 //
 //        public static String[] removeBadSymbols(String wordiInTextLine) {
 //        String symbolsToRemove = "!?,.{}()[]:;";
@@ -71,8 +79,8 @@ public class RunApp {
 //
 //        }
 //    }
-
-
+//
+//
 //    public int countUniqueWords( Map<String,Integer> uniqueWord) {
 //         uniqueWord = new HashMap<>();
 //        for (String word:words){

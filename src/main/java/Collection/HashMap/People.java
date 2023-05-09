@@ -19,5 +19,6 @@ public class People {
         for (String i : people.keySet()) {
             System.out.println("key: " + i + " value: " + people.get(i));
         }
+        people.get("John");
     }
 }

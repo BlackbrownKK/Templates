@@ -1,6 +1,7 @@
 package Collection.HashMap;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class Example01 {
     public static void main(String[] args) {
@@ -32,6 +33,9 @@ public class Example01 {
 
         for (String i : hash_map.values()) {  // получить набор всех значений
             System.out.println(i);
+        }
+        for (Map.Entry<Integer,String> p : hash_map.entrySet()){
+            System.out.println(p.getKey() + " - " + p.getValue());
         }
     }
 }
