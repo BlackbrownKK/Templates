@@ -1,4 +1,4 @@
-package ArithmeticOperator;
+package Operations.ArithmeticOperator;
 
 public class ArithmeticOperatorC {
 

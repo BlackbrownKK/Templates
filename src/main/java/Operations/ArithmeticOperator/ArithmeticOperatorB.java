@@ -1,25 +1,31 @@
-package ArithmeticOperator;
+package Operations.ArithmeticOperator;
 
 // Арифметические бинарные операторы
-public class ArithmeticOperatorA {
+public class ArithmeticOperatorB {
+
+    // Объявление переменных вне метода main.
+    // Переменные этого класса.
+    static int num1;
+    static int num2;
+    static double res;
 
     public static void main(String[] args) {
 
-        // Объявление и инициализация переменных
-        int num1 = 102;
-        int num2 = 25;
+        // Инициализация переменных
+        num1 = 102;
+        num2 = 25;
 
         // Сложение
-        int res1 = num1 + num2;
-        System.out.println("Оператор +  " + res1);
+        res = num1 + num2;
+        System.out.println("Оператор +  " + res);
 
         // Вычитание
-        int res2 = num1 - num2;
-        System.out.println("Оператор -  " + res2);
+        res = num1 - num2;
+        System.out.println("Оператор -  " + res);
 
         // Умножение
-        int res3 = num1 * num2;
-        System.out.println("Оператор *  " + res3);
+        res = num1 * num2;
+        System.out.println("Оператор *  " + res);
 
         // Деление.
         //
@@ -32,15 +38,15 @@ public class ArithmeticOperatorA {
         // целочисленное деление, что в данном случае даст 22/64 = 0.
         // Только после этого вы создаете число с плавающей запятой.
         // И представление с плавающей запятой 0 равно 0,0.
-        double res4 = num1 / num2;
-        System.out.println("Оператор /  " + res4);
+        res = num1 / num2;
+        System.out.println("Оператор /  " + res);
         // Если вы хотите выполнить деление с плавающей запятой,
         // вы должны перед делением привести int num1 ко float
-        double res41 = ((float) num1) / num2;
-        System.out.println("Оператор /  (приведение) " + res41);
+        res = ((float) num1) / num2;
+        System.out.println("Оператор /  (приведение) " + res);
 
         // Взятия остатка
-        double res5 = num1 % num2;
-        System.out.println("Оператор %  " + res5);
+        res = num1 % num2;
+        System.out.println("Оператор %  " + res);
     }
 }
