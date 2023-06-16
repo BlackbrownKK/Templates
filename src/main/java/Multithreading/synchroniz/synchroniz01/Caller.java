@@ -1,4 +1,4 @@
-package Multithreading.synchroniz;
+package Multithreading.synchroniz.synchroniz01;
 
 public class Caller implements Runnable {
     String msg;

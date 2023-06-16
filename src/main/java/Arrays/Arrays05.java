@@ -3,6 +3,7 @@ package Arrays;
 public class Arrays05 {
 
     public static void main(String[] args) {
+        System.out.println("Hsllo, JAVA!");
         // создаем массив определенной длины,
         // и заполняем его поиндексно
         String[] fruits = new String[5];
