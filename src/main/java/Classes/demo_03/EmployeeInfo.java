@@ -1,7 +1,7 @@
 package Classes.demo_03;
 
 // расчет дохода и налога с дохода
-public class EmployeeInfo {
+public class EmployeeInfo extends Employee {
 
     static String name;
     static int hours;
@@ -10,6 +10,11 @@ public class EmployeeInfo {
     static Employee employee;
     static double income;
     static double tax;
+
+    public EmployeeInfo(String name) {
+        super();
+
+    }
 
     public static void main(String[] args) {
 

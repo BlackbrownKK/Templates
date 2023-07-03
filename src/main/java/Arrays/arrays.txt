@@ -1,0 +1,41 @@
+toString(array) — returning a string representation of an array.
+deepToString(array) — returning a string representation of a multidimensional array.
+copyOf(array, length) — copying an array with a specific length.
+equals(array1, array2) — comparing arrays.
+deepEquals(array1, array2) — comparing multidimensional arrays.
+sort(array) — sorting the elements of a specific array into ascending numerical order.
+binarySearch(array, element) — searching a specific array for the element value and returning its index if the element is found.
+fill(array, element) — filling array elements with the value element.
+
+
+int[] array = {9, 8, 7, 6, 5};
+System.out.println(Arrays.toString(array));
+
+int[] newArray = Arrays.copyOf(array, 8);
+System.out.println(Arrays.toString(newArray));
+
+int intArr[] = {55, 57, 61, 66, 18, 19, 27, 38,10, 55, 15, 39, 51, 18, 83, 95};
+Arrays.sort(intArr);
+
+int intArr[] = {10, 15, 18, 18, 19, 27, 38, 39, 51, 55, 55, 57, 61, 66, 83, 95};
+int searchVal = 55;
+int retVal = Arrays.binarySearch(intArr, searchVal);
+
+int[] array = new int[7];
+Arrays.fill(array, -1); // [-1, -1, -1, -1, -1, -1, -1]
+
+
+The deepToString method returns a string representation of the specified multidimensional array.
+
+int [][] array = {{1, 2, 3},{4, 5, 6}};
+System.out.println(Arrays.deepToString(array)); // -> [[1, 2, 3], [4, 5, 6]]
+
+int[][] array = { { 1, 2, 3 }, { 4, 5, 6 }, { 7 } };
+int[][] anotherArray = { { 1, 2, 3 }, { 4, 5, 6 }, { 7 } };
+System.out.println(Arrays.equals(array, anotherArray)); // ->  false
+System.out.println(Arrays.deepEquals(array, anotherArray)); // ->   true
+
+
+
+
+

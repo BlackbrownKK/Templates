@@ -15,7 +15,7 @@ public class Data {
         int myNum = 15;
         System.out.println(myNum);
 
-        int myNum2 = 5;
+        int myNum2 = 5 / 8;
         float myFloatNum = 5.99f;
         char myLetter = 'D'; // Character
         boolean myBool = true;
@@ -30,7 +30,8 @@ static Boolean valueOf(String логическая_строка)  будет с�
 
         System.out.println(myText);
         System.out.println(myText.charAt(3));
-
+        double а = 1.47d;
+        float b = 1 / 2;
 
         char chars[] = {'а', 'Ь', 'с'}; // конструктор: String(char chars[]) -> " аЬс ".
         String s = new String(chars);
@@ -47,8 +48,26 @@ static Boolean valueOf(String логическая_строка)  будет с�
 
         String s3 = "четыре: " + 2 + 2; //  четыре: 22
         String s4 = " четыре: " + (2 + 2); //  четыре: 4
-
     }
+    public void data(){
+
+        int i = 3;
+        byte b = 1;
+        byte b1 = 1 + 2;                // line 1
+//        short s = 304111;               // line 2
+        short s1 = (short) 304111;      // line 3
+//        b = b1 + 1;                     // line 4
+        b = (byte)  (b1 + 1);           // line 5
+//        b = -b;                         // line 6
+        b = (byte) -b;                  // line 7
+        b1 *= 2;                        // line 8
+//        b = i;                          // line 9
+        b = (byte)  i;
+        b += i++;
+        float f = 1.1f;
+        b /= f;
+    }
+
 }
 //byte	1 byte	Stores whole numbers from -128 to 127
 //        short	2 bytes	Stores whole numbers from -32,768 to 32,767

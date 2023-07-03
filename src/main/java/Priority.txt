@@ -1,0 +1,16 @@
+Priority of operators in Java
+Postfix	    () [] . (dot)	Left to right
+Unary	    ++ -- ! ~	    Right to left
+Multiplicative  * / %	    Left to right
+Additive    + -	            Left to right
+Shift	    >> >>> <<	    Left to right
+Relational	> >= < <=	    Left to right
+Equality	== !=	        Left to right
+Bitwise "AND" ("AND")	&	Left to right
+Bitwise exclusive "OR" ("XOR")	^	Left to right
+Bitwise "OR" ("OR")	|	            Left to right
+Logical "AND" ("AND")	&&	        Left to right
+Logical "OR" ("OR")	||          	Left to right
+Ternary (conditional)	?:	        Right to left
+Assignment	= += -= *= /= %= >>= <<= &= ^= |=	Right to left
+Comma	,	                Left to right

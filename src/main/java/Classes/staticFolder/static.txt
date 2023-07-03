@@ -1,0 +1,53 @@
+
+The modifier static
+
+The modifier static is used to create methods and variables (fields) belonging to a class and not to an object.
+
+
+static
+The data field or method declared in a class as static is common for all objects of that class and
+is called a class field or a class method. In other words, they belong to a class and not to a class instance.
+
+Static fields (class fields) have a number of features compared to instance fields:
+
+Feature 1
+Static fields should be used without creating a class instance.
+Feature 2
+If one object changes the value of such a field, all objects will see this change.
+
+
+Static methods (class methods) are used to work with static class fields or only with data
+ specified in their parameters. Just like class fields, static methods have a number of features:
+
+//    Static methods are not polymorphic; that is, the method version to be executed is determined at compile time.
+
+//    Static methods can be called from instance methods directly, just like static class fields.
+
+//    Static methods are not linked to a class instance and thus cannot use the keywords this or super to access
+//    a specific object.
+
+//    Static methods cannot access instance fields and methods directly. To access these, you need to create
+//    or receive a reference to the object.
+
+To access static fields and methods, it is enough to specify before them the name of the class where they are defined.
+Of course, you can access a static method also using a reference to an object since any class instance has access to
+the static members of the class. However, this access will be logically incorrect, make the code more difficult to
+understand, and lead to the corresponding warning—though it will not cause a compilation error.
+
+Consider a few examples of using the keyword static.
+
+Recommendation: Methods using only static class data should be declared as static so that you can use them
+without creating a class instance.
+
+The definition of a class method as static depends on the data used by it:
+
+
+Recommendation: Methods that receive everything they need through parameters are auxiliary and should be declared as static.
+
+
+Limitations for static methods:
+
+Static methods can directly invoke only static methods.
+Static methods can directly access only static fields or their own parameters.
+Static methods cannot be accessed using the references this and super.
+Static methods can be overloaded with non-static ones and vice versa.

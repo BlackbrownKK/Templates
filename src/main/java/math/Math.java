@@ -20,12 +20,12 @@ public class Math {
         System.out.println(java.lang.Math.nextUp(a)); //Возвращает следующее значение
 
         float num = 5.25f;
-        System.out.println(round(num));
-        System.out.println(java.lang.Math.floor(num));
-        System.out.println(java.lang.Math.ceil(num));
+        System.out.println(round(num)); //round – rounding pursuant to the standard math rules: Math.round(5.8) // 6
+        System.out.println(java.lang.Math.floor(num)); // floor – rounding down: Math.floor(5.7) // 5
+        System.out.println(java.lang.Math.ceil(num)); // ceil – rounding up: Math.ceil(3.3) // 4
 
         System.out.println();
-        System.out.println();
+        System.out.println(2+3);
     }
 
     public class SideLengths {

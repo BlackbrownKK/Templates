@@ -16,5 +16,11 @@ public class Arrays06 {
         // последний элемент массива
         String lastValue = fruits[fruits.length - 1];
         System.out.println("Last element is " + lastValue);
+
+
+        for (String str : fruits) {
+            str = "qaz";
+        }
+        System.out.println(Arrays.toString(fruits));
     }
 }

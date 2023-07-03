@@ -23,5 +23,14 @@ public class Arrays01 {
 
         System.out.println(Arrays.toString(elements));
 
+
+        int[] arr1 = {1,2,3,4,5,6,7,8,9};
+        int[] arr2 = {1,2,3,4,5,6,7,8,9};
+        int[] arr3 = {1,2,5,5,5,5,5,8,9};
+        System.out.println(arr1 == arr2);
+        System.out.println(Arrays.equals(arr1, arr2));
+        System.out.println(Arrays.equals(arr1, arr3));
+        System.out.println(Arrays.toString(arr1));
+
     }
 }
