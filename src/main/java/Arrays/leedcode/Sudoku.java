@@ -1,6 +1,5 @@
 package Arrays.leedcode;
 
-import java.util.HashMap;
 import java.util.HashSet;
 
 //    int[][] nums = { { 4, 13, 23 }, { 3, 14, 52 } };
@@ -38,4 +37,23 @@ public class Sudoku {
 
         return true;
     }
+
+
+    public boolean array123(int[] nums) {
+        int a = 1;
+        int b = 2;
+        int c = 3;
+        int sumA = 0;
+        int sumB = 0;
+        int sumC = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == a) sumA++;
+            else if (nums[i] == b) sumB++;
+            else if (nums[i] == c) sumC++;
+        }
+
+        if (sumA != 0 && sumB != 0 && sumC != 0) return true;
+        return false;
+    }
+
 }

@@ -1,5 +1,7 @@
 package Classes.encapsulation;
 
+import java.util.Objects;
+
 public class Box {
 
     private double width;
@@ -14,7 +16,7 @@ public class Box {
     }
 
     // конструктор, применяемый при указании всех размеров
-    Box(double w, double h, double d) {
+    public Box(double w, double h, double d) {
         width = w;
         height = h;
         depth = d;
@@ -40,6 +42,18 @@ public class Box {
     // Теперь в классе BoxWeight полностью реализованы все конструкторы
 
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Box box = (Box) o;
+        return Double.compare(box.width, width) == 0 && Double.compare(box.height, height) == 0 && Double.compare(box.depth, depth) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(width, height, depth);
+    }
 }
 
 

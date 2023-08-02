@@ -14,4 +14,6 @@ public class D1 {
     public double length (){
         return Math.abs(x);
     }
+
+
 }

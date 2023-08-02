@@ -15,5 +15,8 @@ public class Elapsed {
         // end = System.nanoTime(); наносекунды,
 //получить конечный момент времени
         System.out.println("Bpeмя выполнения: " + (end - start));
+
+
+
     }
 }
