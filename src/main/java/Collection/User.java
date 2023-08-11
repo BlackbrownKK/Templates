@@ -1,10 +1,10 @@
 package Collection;
 
-public class User <T>{
+public class User<T> {
 
-private T value;
+    private T value;
 
-    public void print (T value) {
+    public void print(T value) {
         System.out.println(value);
     }
 
