@@ -1,10 +1,10 @@
 package generic.autotasks.house;
 
 
-import com.epam.rd.autotasks.residents.cats.Cat;
-import com.epam.rd.autotasks.residents.cats.Kitten;
-import com.epam.rd.autotasks.residents.dogs.Dog;
-import com.epam.rd.autotasks.residents.dogs.Puppy;
+import generic.autotasks.residents.cats.Cat;
+import generic.autotasks.residents.cats.Kitten;
+import generic.autotasks.residents.dogs.Dog;
+import generic.autotasks.residents.dogs.Puppy;
 
 public class Main {
 

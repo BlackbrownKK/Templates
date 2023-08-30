@@ -49,7 +49,11 @@ public class SquareNum {
      * @exception  Если при вводе возникает ошибка, то генерируется исключение типа IOException
      * @see IOException
      */
-
+    /**
+     *  ‹img srс="doc-files/uml.png" аlt="Diagram UML"/›
+     * @param args
+     * @throws IOException
+     */
     public static void main(String args[]) throws IOException {
         SquareNum ob = new SquareNum();
         double val;
@@ -57,5 +61,22 @@ public class SquareNum {
         val = ob.getNumber();
         val = ob.square(val);
         System.out.println("Kвaдpaт значения равен " + val);
+    }
+
+    /**
+     * Returns the character at the specified index. An index
+     * ranges from ‹code›0‹/code› to ‹code›length() - 1‹/code›.
+     *
+     * @param  index the index of the desired character.
+     * @return the desired character.
+     * @throws StringIndexOutOfRangeException
+     *    if the index is not in the range ‹code›0‹/code›
+     *    to ‹code›length()-1‹/code›.
+     * @see    java.lang.Character#charValue()
+     * @deprecated Use setVisible(true) instead
+     */
+    public char charAt(int index) throws StringIndexOutOfBoundsException{
+        System.out.println("L");
+        return 'c';
     }
 }

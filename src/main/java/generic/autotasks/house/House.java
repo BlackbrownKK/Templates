@@ -1,8 +1,5 @@
 package generic.autotasks.house;
 
-import com.epam.rd.autotasks.residents.cats.Cat;
-import com.epam.rd.autotasks.residents.cats.Kitten;
-
 import java.util.ArrayList;
 import java.util.List;
 
