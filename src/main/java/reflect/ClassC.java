@@ -1,6 +1,5 @@
 package reflect;
 
-import Pattern.Singleton.User;
 
 public class ClassC {
     private static ClassC classC;
