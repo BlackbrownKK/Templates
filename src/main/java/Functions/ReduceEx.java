@@ -19,4 +19,6 @@ public class ReduceEx {
         Integer sum = listOfInt.stream().reduce(0, getSum);
         System.out.println(sum);
     }
+
+     // return intStream.sum(); - so good!
 }

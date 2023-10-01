@@ -1,9 +1,7 @@
 package Functions;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Set;
+import javax.swing.*;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class CollecrorsEx {
@@ -23,5 +21,30 @@ public class CollecrorsEx {
                 .collect(Collectors.joining(","));
 
         System.out.println(lingWord);
+
+        Long lingWordHowMany = words
+                .stream()
+                .filter((word) -> word.length() > 2)
+                .collect(Collectors.counting());
+
+        System.out.println(lingWordHowMany);
+
+
+        Map<Integer, List<String>> resultMap = words
+                .stream()
+                .collect(Collectors.groupingBy(
+                        (word) -> word.length()
+                ));
+        System.out.println();
+        System.out.println(resultMap);
+
+        Map<Boolean, List<String>> resultMap2 = words
+                .stream()
+                .collect(Collectors.partitioningBy(
+                        (word) -> word.length()>4
+                ));
+        System.out.println();
+        System.out.println(resultMap2);
+
     }
 }

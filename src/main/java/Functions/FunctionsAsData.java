@@ -12,6 +12,7 @@ public class FunctionsAsData {
     }
 
     protected static class DataLoader {
+
         public final NoArgFunctions<Person> loadPerson;
 
         public DataLoader(Boolean idDev) {
@@ -28,6 +29,7 @@ public class FunctionsAsData {
             return new Person("Fake", 18);
         }
     }
+
 
     public static void main(String[] args) {
         final Boolean IS_DEV = true;
