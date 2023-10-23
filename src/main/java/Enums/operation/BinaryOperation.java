@@ -1,4 +1,7 @@
 package Enums.operation;
+
+import java.util.Scanner;
+
 /*
 10 + 2 = 12
 10 - 2 = 8
@@ -36,8 +39,11 @@ public enum BinaryOperation {
     }
 
     public static void main(String args[]) {
-        int x = 10;
-        int y = 2;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("ENTER X");
+        int x = scanner.nextInt();
+        System.out.println("ENTER Y");
+        int y = scanner.nextInt();
         for (BinaryOperation op : BinaryOperation.values())
             System.out.println(x + " " + op.operation + " " + y
                     + " = " + op.calculate(x, y));
